@@ -1,5 +1,7 @@
 import React from 'react'
-import video from '../../assets/images/video.mp4'
+import video from '../../assets/images/video.mp4';
+import { GrLocation } from "react-icons/gr";
+import { HiFilter } from "react-icons/hi";
 import './home.scss'
 
 const Home = () => {
@@ -24,7 +26,26 @@ const Home = () => {
                         <label htmlFor='city'>Search your destination:</label>
                         <div className="input flex">
                             <input type="text" name="" id="" placeholder='Enter name here....' />
+                            <GrLocation className='icon' />
                         </div>
+                    </div>
+                    <div className="dateInput">
+                        <label htmlFor='date'>Select your date:</label>
+                        <div className="input flex">
+                            <input type="date" name="" id="" />
+                        </div>
+                    </div>
+                    <div className="priceInput">
+                        <div className="label_total flex">
+                            <label htmlFor="price">Max price:</label>
+                        </div>
+                        <h3 className='total'>$5000</h3>
+                        <div className="input flex">
+                            <input type="range" name="" id="" max="5000" min="1000" />
+                        </div>
+                    </div>
+                    <div className="searchOptions flex">
+                        <HiFilter className='icon' />
                     </div>
                 </div>
             </div>
